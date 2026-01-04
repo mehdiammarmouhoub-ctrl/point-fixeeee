@@ -7,8 +7,8 @@ double polynome(double x, double a, double b, double c) {
 }
 
 double g_point_fixe(double x, double a, double b, double c) {
-    if (fabs(a) < 1e-10) return x;  // évite division par 0
-    return -0.5 * (b * x + c) / a;  // transformation f(x)=0 → x=g(x)
+    if (fabs(a) < 1e-10) return x;  
+    return -0.5 * (b * x + c) / a;  
 }
 
 double methode_point_fixe(double x0, double tol, int max_iter, double A, double B, double C) {
@@ -117,3 +117,4 @@ int main() {
     int c; do c = getchar(); while (c != '\\n');
     return 0;
 }
+
